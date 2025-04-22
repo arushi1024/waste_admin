@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "495534033843",
+    "firebase_url": "https://waste-management-40459-default-rtdb.firebaseio.com",
+    "project_id": "waste-management-40459",
+    "storage_bucket": "waste-management-40459.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:495534033843:android:1a114ddb32695029dc19c6",
+        "android_client_info": {
+          "package_name": "com.example.waste_management"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLgOtShvSlPvr5NxBIjby8AKf9IjNJpxw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:495534033843:android:d6afc08a68cc5f93dc19c6",
+        "android_client_info": {
+          "package_name": "com.example.waste_management_admin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLgOtShvSlPvr5NxBIjby8AKf9IjNJpxw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:495534033843:android:ec62c257fc27dcf7dc19c6",
+        "android_client_info": {
+          "package_name": "com.example.waste_management_driver"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLgOtShvSlPvr5NxBIjby8AKf9IjNJpxw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
