@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:waste_management_admin/attendance.dart';
 import 'package:waste_management_admin/complaints.dart';
+import 'package:waste_management_admin/payment.dart';
 import 'package:waste_management_admin/routes.dart';
 import 'package:waste_management_admin/users.dart';
 import 'package:waste_management_admin/view_routes.dart';
@@ -7,13 +9,15 @@ import 'package:waste_management_admin/view_routes.dart';
 class AdminHomePage extends StatelessWidget {
   const AdminHomePage({super.key});
 
-  final List<_AdminOption> options = const [
-    _AdminOption("Routes", Icons.alt_route, "/routesPage"),
-    _AdminOption("Manage Drivers", Icons.directions_bus, "/driversPage"),
-    _AdminOption("Users", Icons.people, "/usersPage"),
+ final List<_AdminOption> options = const [
+  _AdminOption("Routes", Icons.alt_route, "/routesPage"),
+  _AdminOption("Manage Drivers", Icons.directions_bus, "/driversPage"),
+  _AdminOption("Users", Icons.people, "/usersPage"),
+  _AdminOption("Complaints", Icons.report_problem, "/complaintsPage"),
+  _AdminOption("Attendance", Icons.calendar_today, "/attendancePage"),
+  _AdminOption("Payrolls", Icons.payment, "/payrollsPage"), // New Payroll option
+];
 
-    _AdminOption("Complaints", Icons.report_problem, "/complaintsPage"),
-  ];
 
   @override
   Widget build(BuildContext context) {
@@ -96,6 +100,22 @@ class AdminHomePage extends StatelessWidget {
                           context,
                           MaterialPageRoute(
                             builder: (builder) => ComplaintsPage(),
+                          ),
+                        );
+                      }
+                      if (index == 4) {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (builder) => AttendancePage(),
+                          ),
+                        );
+                      }
+                      if (index == 5) {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (builder) => PayrollPage(),
                           ),
                         );
                       }
